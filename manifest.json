@@ -1,13 +1,12 @@
 {
 "manifest_version": 2,
 "name" :"Focus Mode",
-"version" :"1.2",
-"description" :"A mode to keep you focused at work !",
+"version" :"beta10"
 "icons": { "128": "images/icon128-2.png" },
 "browser_action" : {
   "default_icon": "images/icon128-1.png",
 	"default_popup": "html/popup.html",
-  "default_title": "Work Mode"
+  "default_title": "Eagle Eye"
 },
 "background": {
   "scripts": ["js/background.js"],
