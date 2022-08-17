@@ -1,7 +1,7 @@
 {
 "manifest_version": 2,
 "name" :"Eagle Eye",
-"version" :"beta10"
+"version" :"0.1.0"
 "icons": { "128": "images/icon128-2.png" },
 "browser_action" : {
   "default_icon": "images/icon128-1.png",
