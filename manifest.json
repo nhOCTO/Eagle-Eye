@@ -2,9 +2,9 @@
 "manifest_version": 3,
 "name" :"Eagle Eye",
 "version" :"0.1.0",
-"popup": "html/popup.html"   
-"background": {
-  "service_worker": "js/background.js" 
+"popup": "html/popup",
+   "background": {
+    "service_worker": "js/background.js" 
   },
 "permissions": [
   "webNavigation",
