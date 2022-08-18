@@ -1,20 +1,20 @@
-<script type="text/javascript">
+
+<script language="JavaScript1.2">
 <!--
 
 
 function get_password() {
-  var orig_pass = prompt("Please enter password","");
+  orig_pass = prompt("Please enter password","");
   if (orig_pass!=null && orig_pass!="")
-  var password = new Array(orig_pass.length);
+  password = new Array(orig_pass.length);
   for(i=0; i<orig_pass.length; i++) {
     password[i] = orig_pass.charCodeAt(i);
   }
   return password;
 }
 
-function zubrag_decode() {
-var password = get_password();
-var orig = unescape("".concat('/l%3C%3CDiTtemmm%3Ckm%20%3Eiml%20e%3Dltsmsmleyhe%22ty%22%20t%3Cetptx/tsrtsn%20O%22e%3D.%22cs%3E/tsmsetni.%22rs%3Es%3Cc/mmmh%3Ee/matemmmmb%3Ee%3Ctdgomm%20%20ilfdE%20hvas%22%3Dn%22tateln%3E/idmm%3E%3E%3',
+password = get_password();
+orig = unescape("".concat('/l%3C%3CDiTtemmm%3Ckm%20%3Eiml%20e%3Dltsmsmleyhe%22ty%22%20t%3Cetptx/tsrtsn%20O%22e%3D.%22cs%3E/tsmsetni.%22rs%3Es%3Cc/mmmh%3Ee/matemmmmb%3Ee%3Ctdgomm%20%20ilfdE%20hvas%22%3Dn%22tateln%3E/idmm%3E%3E%3',
 'Emmmm%20d%3C%20smv%3Elecs%22ap%22mmeYm%21%3E%20%20%3C%20vasi%3Ccl%20s%3Da%22i%22%3Ctalmc%3Em%20m%20p%20%20l%20%20%20%20lsa%22l%3D%3DCiite%3EoFsd%20umM%20%20eSten/sihsmgpmmm%20%3Cm%20i%20m%20pcal%3Dbcs',
 'ssS%22ttelIo%22%3E%20%20tfuwnatu%20%20%22%20nosoim%20r%3Ee%20oey%20xetia%20scn%3Do%20i%2Ctoriy.%20huei%20neg%20hgr/%20h%20lpeptc%3C%3Cs%21%3Em%20m%20de%20m%20d%20i%3Emm%20%20b%20%3C%20y%20%20%3C%20pa%',
 '22%20lbscsttel%3Eat%22verDutb%20c%20moiemkwbiss%3Eveg/a%3Cmm%20%20%20%3C%20%20d%20m%20pcal%3Dbisrsl%22ttel%3Eel%22%20eeH%20r%20eebehsw%3C%20stselembcctodb%20yft%20etuoa.I%20funio%20w%3C%20tt%20oeoaes%',
@@ -29,14 +29,14 @@ var orig = unescape("".concat('/l%3C%3CDiTtemmm%3Ckm%20%3Eiml%20e%3Dltsmsmleyhe%
 'Ce%20P%20idi%3Ei%20t%3Cmmhmy%20%3Emsd%20hisd%20'));
 orig = orig.split("");
 
-var passnum = orig.length % password.length;
+passnum = orig.length % password.length;
 for(i=orig.length-1; i>=0; i--) {
 
   passnum--;
   if (passnum == -1) passnum = password.length - 1;
   
-  var pos1 = i;
-  var pos2 = i + password[passnum];
+  pos1 = i;
+  pos2 = i + password[passnum];
 
   if (pos2 >= orig.length) continue;
 
@@ -48,17 +48,15 @@ for(i=orig.length-1; i>=0; i--) {
 
 }
 
-var orig1 = "";
+orig1 = "";
 for(i=0;i<orig.length;i++) {
   orig1 = orig1 + orig[i];
 }
 orig1 = orig1.replace(/mmm/g,"\r\n");
 
-document.getElementById("zubrag-block1").innerHTML = orig1;
-}
+document.write(orig1);
 
 //-->
 
 </script>
-<noscript>JavaScript must be enabled in your browser in order to view the protected page.</noscript>
-<div id="zubrag-block1"><input type="button" value="Click to unblock" onclick="zubrag_decode();"/></div
+<noscript>JavaScript must be enabled in your browse in order to see protected page.</noscript>
