@@ -1,62 +1,64 @@
-
-<script language="JavaScript1.2">
 <!--
+Copyright (C) 2015 Adrien Coppola
 
+This file is part of Focus Mode.
 
-function get_password() {
-  orig_pass = prompt("Please enter password","");
-  if (orig_pass!=null && orig_pass!="")
-  password = new Array(orig_pass.length);
-  for(i=0; i<orig_pass.length; i++) {
-    password[i] = orig_pass.charCodeAt(i);
-  }
-  return password;
-}
+Focus Mode is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-password = get_password();
-orig = unescape("".concat('/l%3C%3CDiTtemmm%3Ckm%20%3Eiml%20e%3Dltsmsmleyhe%22ty%22%20t%3Cetptx/tsrtsn%20O%22e%3D.%22cs%3E/tsmsetni.%22rs%3Es%3Cc/mmmh%3Ee/matemmmmb%3Ee%3Ctdgomm%20%20ilfdE%20hvas%22%3Dn%22tateln%3E/idmm%3E%3E%3',
-'Emmmm%20d%3C%20smv%3Elecs%22ap%22mmeYm%21%3E%20%20%3C%20vasi%3Ccl%20s%3Da%22i%22%3Ctalmc%3Em%20m%20p%20%20l%20%20%20%20lsa%22l%3D%3DCiite%3EoFsd%20umM%20%20eSten/sihsmgpmmm%20%3Cm%20i%20m%20pcal%3Dbcs',
-'ssS%22ttelIo%22%3E%20%20tfuwnatu%20%20%22%20nosoim%20r%3Ee%20oey%20xetia%20scn%3Do%20i%2Ctoriy.%20huei%20neg%20hgr/%20h%20lpeptc%3C%3Cs%21%3Em%20m%20de%20m%20d%20i%3Emm%20%20b%20%3C%20y%20%20%3C%20pa%',
-'22%20lbscsttel%3Eat%22verDutb%20c%20moiemkwbiss%3Eveg/a%3Cmm%20%20%20%3C%20%20d%20m%20pcal%3Dbisrsl%22ttel%3Eel%22%20eeH%20r%20eebehsw%3C%20stselembcctodb%20yft%20etuoa.I%20funio%20w%3C%20tt%20oeoaes%',
-'20%20pm%20fohait%22muecessly%20bt%2Cyeo%20uj%20d%20tzecn%20ou%20h%20%20cncuete.mpme/%20m%20%3E%20%20%20%20%20%20c%20tua%3Ci%3Dd%22aLufaliuit%20%22a%22tl%20s/sls%22tm%20hmm%20%3Cm%20%20%20%20um%20/c%3E',
-'%20lm%20%20%20%3Cvd%201d%3D/%3Em%20m%20ds%20l%20f%20i%3Emm%20%20i%20t%20d%20%20%3C%20pa%22%20l%20spsttel%3Et%20%22su%20Co%20lbkwmc1dueesti%3Cmvstpr/m%20%20%20%20p%20%20%20%20e%20%20lsa%22ti%3Dduksil1e',
-'Iom%3Ey%20lfuneetlb%20k%20aooks%20ermm%20ms%20edsiancrit%20cgwbet%20tiss%20ejs%20tde%20dnte%20mhre%3Cmc.%3Cpk/m%20%20%20%20t%20%20%20%20m%20al%20e%3Ds%20decl%22tmaTemulc%3Et%22m%20%20%20%20%20%20%20%3',
-'E%20%3D%20%20t%20ra%22ml%3Cs%20sha%22dm%20bm%20%20mm%20%20%20%20%20%3Co%20%20%20i%20t%20lcsa%20sm%22%3C%3Dbec-cx%3Cecb%20k%22mmm%20%20e%201%20%3D%20%20%20%20%20%3C%3E%20%20ots/mm%20%20%20%20h%20e%20%2',
-'0%20%20%20%20%20hblt%20W%3E%3Est%3Cehm%3Etsm%3C%3E%20%20%20%20%20%20%20%20%22%20b%20%20%3Chtl%3Dmcdsya%22albcs%20-oobr%22Dleehitt/o%3C%3Em%20m%20%20%20%20s%20i%20%20%20%3C%20rm%20tam%2C%3E%20%20%20%20',
-'%20at%20e/h%3Cbem%3E%20%20%3Em%20%20%3E%20%20%20d%3C%3E%20mvim%3Cm%20%20%20%20%20%20%20%20b%3Cu%20casste%20%22%20tmi2%3EdAabl%20cw%20%20st%3Ce%3E%20%20p%3Em%3Dm%20%20%20%20%20n%20%20%20%3C%20%20pti%20',
-'%22il%3Dad%20anIpn%22p%22thtt%20e%22et%22yit%20so%20l%3Dw%22t1%20d%20%3A%20h0%25%22%3Bm%20um%20%20hm%20%20%20%20dmg/%3Cv%20im%20%20%20%20i%3D%20//e%3Cvmmm%20%3Ce%20%20%20m%20dvm%3Emm0m%20m%20mm%20%20%',
-'20%3Cv%20%20eds/%3Em%20m%20im%20e/s%3Cvmmm%3Cv%3E%20%20dt/%3Emmm%20cim/%3C%20%20rp%20tc.%20r%20%22m%3D/ss/tsmtmnti.s%3E%22sp%3E/ir%20ctmmmb%3Em/%20dmomm/%3Cmmit%3D%3Epl%3C.%20ujiddel%20e%20g%3Exjd/y%3',
-'Ce%20P%20idi%3Ei%20t%3Cmmhmy%20%3Emsd%20hisd%20'));
-orig = orig.split("");
+Focus Mode is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
-passnum = orig.length % password.length;
-for(i=orig.length-1; i>=0; i--) {
+You should have received a copy of the GNU General Public License
+along with Focus Mode.  If not, see <http://www.gnu.org/licenses/>.
+-->
 
-  passnum--;
-  if (passnum == -1) passnum = password.length - 1;
-  
-  pos1 = i;
-  pos2 = i + password[passnum];
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Settings</title>
+  <link rel="stylesheet" type="text/css" href="../css/settings.css"/>
+</head>
 
-  if (pos2 >= orig.length) continue;
+<body>
+  <div class="banner"></div>
 
-  char1 = orig[pos1];
-  char2 = orig[pos2];
+  <div class="page">
+    <div class="article">
+      <p class="title">Focus Mode Settings</p>
+      <p class="subtitle">If you want to customize your extension a bit, you are in the right place!</p>
+      <div>
+        <p class="title1">Default blocked websites</p>
+        <p class="subtitle1">Here are the websites blocked by default. If you want to keep some of them accessible, you just need to uncheck them.</p>
+        <ul id="defaultList" class="list">
+        </ul>
+      </div>
+      <div>
+        <p class="title1">Custom blocked websites</p>
+        <p class="subtitle1">If you need to block some more distracting websites, just add them here.</p>
+        <table id="customTable">
+            <tr class="head">
+              <th class="table-checkbox">
+              </th>
+              <th>Website</th>
+              <th class="table-cross">Delete</th>
+            </tr>
+        </table>
+        <div>
+          <p class="title2">Add a website</p>
+          <input id="addingInput" type="text" style="width: 100%;">
+        </div>
+      </div>
+      <div>
+     
+      </div>
+    </div>
+  </div>
 
-  orig[pos2] = char1;
-  orig[pos1] = char2;
-
-}
-
-orig1 = "";
-for(i=0;i<orig.length;i++) {
-  orig1 = orig1 + orig[i];
-}
-orig1 = orig1.replace(/mmm/g,"\r\n");
-
-document.write(orig1);
-
-//-->
-
-</script>
-<noscript>JavaScript must be enabled in your browse in order to see protected page.</noscript>
+  <script src="../js/settings.js"></script>
+</body>
+</html>
