@@ -3,8 +3,6 @@
 "name" :"Eagle Eye",
 "version" :"0.1.0",
 "popup": "html/popup.html"   
-
-  },
 "background": {
   "service_worker": "js/background.js" 
   },
