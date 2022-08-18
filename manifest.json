@@ -2,9 +2,8 @@
 "manifest_version": 3,
 "name" :"Eagle Eye",
 "version" :"0.1.0",
+"popup": "html/popup.html"   
 
-  "default_icons": {
-    "128": "images/icon128.png"
   },
 "background": {
   "service_worker": "js/background.js" 
