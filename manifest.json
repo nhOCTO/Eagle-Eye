@@ -3,13 +3,13 @@
 "name" :"Eagle Eye",
 "version" :"0.1.0".
 
-  "default_icons",: {
+  "default_icons": {
     "128": "images/icon128.png"
-  }
-"background",: {
+  },
+"background": {
   "scripts": ["js/background.js"],
   "persistent": false
-
+  }
 "permissions",: [
   "webNavigation",
   "tabs",
