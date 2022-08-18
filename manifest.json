@@ -3,7 +3,7 @@
 "name" :"Eagle Eye",
 "version" :"0.1.0"
 
-  "icons": {
+  "default_icons": {
     "128": "images/icon128.png"
   }
 "background": {
